@@ -75,7 +75,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<BlogList />} />
         <Route path="/blogs" element={<BlogList />} />
         <Route path="/blog/:id" element={<Blog />} />
       </Routes>
