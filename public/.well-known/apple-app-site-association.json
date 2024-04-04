@@ -1,0 +1,19 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+        {
+          "appID": "8D332YAJVH.com.learn.deepLinkExample",
+          "paths": ["*"]
+        },
+        {
+          "appID": "<team_id>.com.example.myapp.qa",
+          "paths": ["*"]
+        },
+        {
+          "appID": "<team_id>.com.example.myapp",
+          "paths": ["*"]
+        }
+      ]
+    }
+  }
