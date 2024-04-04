@@ -38,6 +38,7 @@ const blogDataList = [
 // Endpoint to handle GET requests to '/blog'
 app.get('/blog/:index', (req, res) => {
     const index = req.params.index;
+    console.log(index);
     if (index >= 0 && index < blogDataList.length) {
         res.json(blogDataList[index]);
     } else {
