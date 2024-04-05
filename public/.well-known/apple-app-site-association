@@ -1,0 +1,14 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+        {
+          "appID": "8D332YAJVH.dev.learn20.deepLink",
+          "paths": ["*"]
+        }
+      ]
+    },
+    "webcredentials": {
+      "apps": [ "8D332YAJVH.dev.learn20.deepLink" ]
+   }
+  }
