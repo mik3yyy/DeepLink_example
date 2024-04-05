@@ -1,6 +1,11 @@
 import express from 'express';
+import path  from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 const app = express();
-
+// const path = require('path')
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 // Sample blog data
 const blogDataList = [
     {
@@ -46,6 +51,10 @@ app.get('/blog/:index', (req, res) => {
     }
 });
 
+app.get('/.well-known/apple-app-site-association', (req, res) => {
+    res.type('application/json');
+    res.sendFile(path.join(__dirname, 'public/.well-known/apple-app-site-association'));
+});
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
